@@ -11,6 +11,4 @@ jobs:
                run: docker --version
 
              - name: run image
-               run: docker run alpine:latest echo "Hello World"
-             - name: run image with args
-               run: docker run alpine:latest echo "Hello World" --name my_container -d -p 8080:80
+               run: docker run alpine:latest
