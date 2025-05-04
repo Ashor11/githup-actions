@@ -1,0 +1,14 @@
+name: Ahsour 
+on: push
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+             - name: docker setup
+               uses: docker/setup-buildx-action@v4
+
+             - name: echo docker version
+               run: docker --version
+
+             - name: run image
+               run: docker run hello-world:latest
