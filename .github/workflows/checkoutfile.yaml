@@ -1,0 +1,16 @@
+name: script ashour
+on: push
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+             - name: Checkout code
+               uses: actions/checkout@v2
+
+             - name: list files
+               run: ls
+             - name: change permission
+               run: chmod +x ashourcom.sh
+
+             - name: run script
+               run: ./ashourcom.sh
