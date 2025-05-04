@@ -10,7 +10,7 @@ jobs:
              - name: list files
                run: ls
              - name: change permission
-               run: chmod +x ashourcom.sh
+               run: sudo chmod +x ashourcom.sh
 
              - name: run script
                run: ./ashourcom.sh
