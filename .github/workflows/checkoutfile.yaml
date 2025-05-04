@@ -1,4 +1,4 @@
-name: script ashour
+name: script-ashour
 on: push
 jobs:
     build:
